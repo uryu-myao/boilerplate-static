@@ -1,0 +1,148 @@
+/.bash_history
+/.ssh/
+/error_docs/
+/httpdocs/
+/logs/
+/.viminfo
+
+# vite build output #
+#####################################
+.vite/
+
+# parcel build output #
+#####################################
+.parcel-cache/
+
+# next.js build output #
+#####################################
+.next/
+
+# nuxt.js build output #
+#####################################
+.nuxt/
+
+# vuepress build output #
+#####################################
+.vuepress/dist
+
+# Build systems #
+#####################################
+node_modules/
+bower_components/
+package-lock.json
+npm-debug.log
+.sass-cache
+*.css.map
+build/
+dist/
+*.bundle.js
+
+# Firebase cache #
+#####################################
+.firebase/
+
+# Logs and database #
+#####################################
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+/config/database.php
+/config/domain.php
+/config/form.json
+/.gitconfig
+database.php
+/sites/kigaeru/blog/database-config.php
+env.php
+
+# Vagrant #
+#####################################
+/.vagrant
+
+# OS generated files #
+#####################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+ehthumns.db
+Thumbs.db
+
+
+# Cache files for sublime text #
+#####################################
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+
+# Workspace files are user-specific #
+#####################################
+*.sublime-workspace
+*.sublime-project
+GitHub.sublime-settings
+
+
+# sftp configuration file #
+#####################################
+sftp-config.json
+
+
+# Package control specific files #
+#####################################
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+
+# Codkit config file #
+#####################################
+config.codekit3
+
+
+# Wordpress #
+#####################################
+wp-config.php
+/blog/database.php
+uploads/
+*.log
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+
+# Mailform engine compile #
+#####################################
+template_c
+
+
+# Ignore npm stuff #
+#####################################
+node_modules/
+
+
+# Packages #
+#####################################
+*.7z
+*.dmg
+*.gz
+*.jar
+*.rar
+*.tar
+*.zip

@@ -1,0 +1,139 @@
+// C E N T E R
+
+// .foo {
+//   @include center(both);
+// }
+
+@mixin center($position) {
+  position: absolute;
+
+  @if $position == 'vertical' {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $position == 'horizontal' {
+    left: 50%;
+    transform: translate(-50%);
+  } @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// F O N T  B A S I C
+
+@mixin font($size, $lh, $ltsp, $weight: normal) {
+  font-size: $size;
+  line-height: $lh;
+  letter-spacing: $ltsp;
+  font-weight: $weight;
+}
+
+/* M Q
+ *
+ * 'xsmall'  : 320px,
+ * 'small'   : 600px,
+ * 'medium'  : 768px,
+ * 'large'   : 1024px,
+ * 'xlarge'  : 1280px,
+ * 'xxlarge' : 1440px,
+
+ * use max
+ * .elements {
+ *   @include mq (large) {
+ *     ...
+ *   }
+ *   @include mq (xlarge, max, true ) {
+ *     ...
+ *   }
+ * }
+
+ * original:
+ * https://www.nxworld.net/tips/sass-media-queries-mixin.html
+ */
+
+@mixin mq($breakpoint: medium, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+
+// B G  I M G
+
+@mixin bg-image(
+  $min-h,
+  $pd-top,
+  $path,
+  $extension,
+  $position: center,
+  $size: cover,
+  $repeat: no-repeat
+) {
+  width: 100%;
+  min-height: $min-h;
+  padding-top: $pd-top;
+  box-sizing: border-box;
+  background: {
+    image: url($path + '.' + $extension);
+    position: $position;
+    size: $size;
+    repeat: $repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 192dpi) {
+    & {
+      background-image: url($path + '@2x.' + $extension);
+    }
+  }
+}
+
+// B O X
+
+@mixin box($width, $margin-left: auto, $margin-right: auto) {
+  max-width: $width;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+
+// F L E X
+
+@mixin flex($justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// L I N K
+
+@mixin linx($link, $hover, $visit, $active, $focus) {
+  a {
+    color: $link;
+    &:hover {
+      color: $hover;
+    }
+    &:visited {
+      color: $visit;
+    }
+    &:active {
+      color: $active;
+    }
+    &:focus {
+      color: $focus;
+    }
+  }
+}
+
+// C O L O R  O P A C I T Y
+
+@mixin clr-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}

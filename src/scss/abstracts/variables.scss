@@ -1,0 +1,66 @@
+// Safe fonts
+$safe-type__en: 'Gill Sans', 'Gill Sans MT', Arial, sans-serif;
+$safe-type__jp: '游ゴシック体', 'YuGothic', '游ゴシック', 'Yu Gothic UI',
+  'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic';
+$safe-type__ch: 'SF Pro SC', 'SF Pro Display', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei New', 'Microsoft Yahei', '微软雅黑';
+
+// Google fonts
+$gf-condensed: 'Barlow Condensed';
+$txt-jp: '';
+
+// Color
+$c-primary: hsl(253, 93%, 63%);
+$c-primary-100: hsl(253, 93%, 96%);
+$c-black: hsl(120, 20%, 6%);
+$c-neutral-1000: #0d0c11;
+$c-neutral-900: #22242b;
+$c-neutral-800: #2b2d33;
+$c-neutral-700: #4e5059;
+$c-neutral-600: #72747f;
+$c-neutral-500: #b2b4bf;
+$c-neutral-400: #dcdee5;
+$c-neutral-300: #f0f1f5;
+$c-neutral-200: #f7f8fa;
+$c-neutral-100: #ffffff;
+
+// DISTANCE
+$unit: 8px;
+$intermediate-unit: 12px;
+$double-unit: 16px;
+$triple-unit: 24px;
+$quadruple-unit: 32px;
+
+// MQ
+$mq-breakpoints: (
+  'xsmall': 320px,
+  'small': 600px,
+  'medium': 768px,
+  'large': 1024px,
+  'xlarge': 1360px,
+  'xxlarge': 1440px,
+);
+
+// Cubic-bezier
+$cb: cubic-bezier(0.6, 0.01, 0.58, 0.99);
+
+// Extend Para
+.tras {
+  transition: all 1s cubic-bezier(0.39, 0.06, 0.39, 0.99);
+}
+
+// Easy switch
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+}

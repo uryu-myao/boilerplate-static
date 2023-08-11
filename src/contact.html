@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  {{> head}}
+
+  <body>
+    <div>
+      <form action="https://formsubmit.co/myao.jpn@gmail.com" method="POST">
+        <input
+          type="email"
+          name="email"
+          placeholder="メールアドレスをご入力ください"
+          required />
+        <input
+          type="text"
+          name="name"
+          placeholder="お名前をご入力ください"
+          required />
+        <input
+          type="text"
+          name="message"
+          placeholder="お問い合わせ内容をご入力ください"
+          required />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yourdomain.co/thanks.html" />
+        <input type="hidden" name="_subject" value="New Email!" />
+        <button type="submit">送信</button>
+      </form>
+    </div>
+    <script type="module" src="/js/pages/top/index.js"></script>
+  </body>
+</html>

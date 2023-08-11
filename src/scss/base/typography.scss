@@ -1,0 +1,20 @@
+// Reset for font-size: 62.5%
+// ==========================================================================
+/**
+ * make 1em = 10px
+ */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 62.5%;
+}
+
+// Web Font
+// ==========================================================================
+// display current time
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;500&family=Libre+Franklin:wght@100;300;600;900&display=swap');

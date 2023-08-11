@@ -1,0 +1,29 @@
+{
+  "name": "boilerplate",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "scripts": {
+    "custom-build": "vite build",
+    "clean": "rm -rf node_modules dist",
+    "dev": "vite --open",
+    "build": "npm run custom-build -- --manifest",
+    "production": "npm run custom-build -- --manifest --minify=false",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.14",
+    "css-declaration-sorter": "^7.0.3",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "postcss-sort-media-queries": "^5.2.0",
+    "sass": "^1.64.2",
+    "vite": "^4.4.9",
+    "vite-plugin-handlebars": "^1.6.0"
+  }
+}

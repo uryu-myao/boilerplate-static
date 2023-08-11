@@ -1,0 +1,22 @@
+{
+  "/index.html": {
+    "pageName": "top",
+    "title": "Home",
+    "description": "Home"
+  },
+  "/about.html": {
+    "pageName": "about",
+    "title": "about",
+    "description": "about"
+  },
+  "/contact.html": {
+    "pageName": "contact",
+    "title": "contact",
+    "description": "contact"
+  },
+  "/thanks.html": {
+    "pageName": "thanks",
+    "title": "thanks",
+    "description": "thanks"
+  }
+}

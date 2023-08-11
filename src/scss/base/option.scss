@@ -1,0 +1,22 @@
+* {
+  font-family: $safe-type__en, $safe-type__jp;
+}
+
+p {
+  margin: 0;
+}
+
+// Reset clicking foucus blue border in all browsers
+div:focus,
+a:focus,
+img:focus,
+span:focus,
+li:focus,
+picture:focus,
+figure:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.01);
+}
