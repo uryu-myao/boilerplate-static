@@ -29,7 +29,6 @@
 #####################################
 node_modules/
 bower_components/
-package-lock.json
 npm-debug.log
 .sass-cache
 *.css.map
