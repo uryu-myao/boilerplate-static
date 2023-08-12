@@ -53,6 +53,7 @@ export default defineConfig({
       },
     },
   },
+  base: '/<REPO>/',
   plugins: [
     handlebars({
       partialDirectory,
