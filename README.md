@@ -1,1 +1,4 @@
-https://zenn.dev/hiiiita/articles/a4881dab7226aa
+Hosting
+
+firebase login:ci
+set Github actions secrets
