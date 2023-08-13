@@ -53,7 +53,6 @@ export default defineConfig({
       },
     },
   },
-  base: '/boilerplate-static/',
   plugins: [
     handlebars({
       partialDirectory,
