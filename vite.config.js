@@ -53,7 +53,7 @@ export default defineConfig({
       },
     },
   },
-  base: '/<REPO>/',
+  base: '/boilerplate-static/',
   plugins: [
     handlebars({
       partialDirectory,
