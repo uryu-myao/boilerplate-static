@@ -3,7 +3,12 @@
   {{> head}}
 
   <body>
-    <div id="app">TOP</div>
+    <div id="app" class="top">
+      <header>{{> navigation}}</header>
+      <main><h1>top</h1></main>
+    </div>
+
+    {{> footer}}
     <script type="module" src="/js/pages/top/index.js"></script>
   </body>
 </html>

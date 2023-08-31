@@ -1,0 +1,9 @@
+.footer {
+  background-color: hsla(0, 0, 80%, 1);
+
+  &-inner {
+    margin-top: 6rem;
+    padding: 4rem 0;
+    text-align: center;
+  }
+}

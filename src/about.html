@@ -3,7 +3,12 @@
   {{> head}}
 
   <body>
-    <div id="app">about</div>
+    <div id="app">
+      <header>{{> navigation}}</header>
+      <main><h1>about</h1></main>
+    </div>
+
+    {{> footer}}
     <script type="module" src="/js/pages/about/index.js"></script>
   </body>
 </html>
